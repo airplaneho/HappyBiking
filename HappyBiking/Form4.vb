@@ -10,7 +10,6 @@
             return_h.Items.Add(r_h.ToString)
         Next
         return_h.Text = return_h_choose
-
     End Sub
 
     Private Sub borrow_m_SelectedIndexChanged(sender As Object, e As EventArgs) Handles borrow_m.SelectedIndexChanged
@@ -32,7 +31,6 @@
             Next
             return_m.Text = return_m_choose
         End If
-
     End Sub
 
     Private Sub return_h_SelectedIndexChanged(sender As Object, e As EventArgs) Handles return_h.SelectedIndexChanged
@@ -54,7 +52,6 @@
             Next
             return_m.Text = return_m_choose
         End If
-
     End Sub
 
     Private Sub return_m_SelectedIndexChanged(sender As Object, e As EventArgs) Handles return_m.SelectedIndexChanged
@@ -99,11 +96,12 @@
     End Sub
 
     Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
-        Form1.Show()
-        Me.Close()
+        Form1.Show()    '顯示主系統
+        Me.Close()      '關閉該子系統
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Process.Start("https://taipei.youbike.com.tw/cht/f43.php")
+        Process.Start("https://taipei.youbike.com.tw/cht/f43.php")  '用預設瀏覽器打開此網頁
     End Sub
+
 End Class

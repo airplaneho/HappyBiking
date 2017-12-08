@@ -61,9 +61,9 @@
         If Beitou.Checked = True Then
             CheckedOrNot(11) = 1 '表示[北投區]已被勾選
         End If
-        ListBox1.Items.Clear()
-        ListBox1.Items.Add("區域別 租賃站點查詢")
 
+        ListBox1.Items.Clear()                      '每次查詢時，先清空上次的結果
+        ListBox1.Items.Add("區域別 租賃站點查詢")
         If CheckedOrNot(0) = 1 Then
             ListBox1.Items.Add("信義區	捷運市政府站(3號出口)")
             ListBox1.Items.Add("信義區	台北市政府")
@@ -152,13 +152,9 @@
 
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles TaipeiCity.Enter
-
-    End Sub
-
     Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
-        Form1.Show()
-        Me.Close()
+        Form1.Show()    '顯示主系統
+        Me.Close()      '關閉此子系統
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles AllClick.Click

@@ -1,15 +1,14 @@
 ﻿Public Class Form5
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ComboBox1.SelectedItem = ComboBox1.Items(0) '預設值為第1個步道:新店溪河濱腳踏車道
+        ComboBox1.SelectedItem = ComboBox1.Items(0)     '預設值為第1個步道:新店溪河濱腳踏車道
     End Sub
 
     Private Sub GoBack_Click(sender As Object, e As EventArgs) Handles GoBack.Click
-        Form1.Show()
-        Me.Close()
+        Form1.Show()        '顯示主系統
+        Me.Close()          '關閉該子系統
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
         Dim Choose As String
         Choose = ComboBox1.SelectedItem
 
@@ -67,6 +66,6 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Process.Start("https://bike.easytravel.com.tw/footpath-page.aspx")
+        Process.Start("https://bike.easytravel.com.tw/footpath-page.aspx")      '用預設瀏覽器打開此網頁
     End Sub
 End Class

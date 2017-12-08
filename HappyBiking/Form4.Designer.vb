@@ -236,11 +236,11 @@ Partial Class Form4
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.MediumBlue
-        Me.Label8.Font = New System.Drawing.Font("新細明體", 20.0!)
+        Me.Label8.Font = New System.Drawing.Font("新細明體", 16.0!)
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(25, 9)
+        Me.Label8.Location = New System.Drawing.Point(-1, 9)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(238, 60)
+        Me.Label8.Size = New System.Drawing.Size(264, 60)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = "YouBike費率計算"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
