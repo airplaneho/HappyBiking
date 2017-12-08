@@ -68,4 +68,8 @@
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Process.Start("https://bike.easytravel.com.tw/footpath-page.aspx")      '用預設瀏覽器打開此網頁
     End Sub
+
+    Private Sub Route_Click(sender As Object, e As EventArgs) Handles Route.Click
+
+    End Sub
 End Class

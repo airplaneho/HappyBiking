@@ -37,12 +37,12 @@ Partial Class Form3
         Me.Zhongzheng = New System.Windows.Forms.CheckBox()
         Me.Zhongshan = New System.Windows.Forms.CheckBox()
         Me.TaipeiCity = New System.Windows.Forms.GroupBox()
+        Me.CancelAll = New System.Windows.Forms.Button()
+        Me.AllClick = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GoBack = New System.Windows.Forms.PictureBox()
-        Me.AllClick = New System.Windows.Forms.Button()
-        Me.CancelAll = New System.Windows.Forms.Button()
         Me.TaipeiCity.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GoBack, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -203,6 +203,24 @@ Partial Class Form3
         Me.TaipeiCity.TabStop = False
         Me.TaipeiCity.Text = "台北市"
         '
+        'CancelAll
+        '
+        Me.CancelAll.Location = New System.Drawing.Point(248, 209)
+        Me.CancelAll.Name = "CancelAll"
+        Me.CancelAll.Size = New System.Drawing.Size(134, 36)
+        Me.CancelAll.TabIndex = 16
+        Me.CancelAll.Text = "取消全部"
+        Me.CancelAll.UseVisualStyleBackColor = True
+        '
+        'AllClick
+        '
+        Me.AllClick.Location = New System.Drawing.Point(126, 210)
+        Me.AllClick.Name = "AllClick"
+        Me.AllClick.Size = New System.Drawing.Size(94, 36)
+        Me.AllClick.TabIndex = 15
+        Me.AllClick.Text = "全選"
+        Me.AllClick.UseVisualStyleBackColor = True
+        '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
@@ -244,24 +262,6 @@ Partial Class Form3
         Me.GoBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.GoBack.TabIndex = 20
         Me.GoBack.TabStop = False
-        '
-        'AllClick
-        '
-        Me.AllClick.Location = New System.Drawing.Point(126, 210)
-        Me.AllClick.Name = "AllClick"
-        Me.AllClick.Size = New System.Drawing.Size(94, 36)
-        Me.AllClick.TabIndex = 15
-        Me.AllClick.Text = "全選"
-        Me.AllClick.UseVisualStyleBackColor = True
-        '
-        'CancelAll
-        '
-        Me.CancelAll.Location = New System.Drawing.Point(248, 209)
-        Me.CancelAll.Name = "CancelAll"
-        Me.CancelAll.Size = New System.Drawing.Size(134, 36)
-        Me.CancelAll.TabIndex = 16
-        Me.CancelAll.Text = "取消全部"
-        Me.CancelAll.UseVisualStyleBackColor = True
         '
         'Form3
         '

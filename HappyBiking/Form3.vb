@@ -188,4 +188,17 @@
         Neihu.CheckState = CheckState.Unchecked
         Beitou.CheckState = CheckState.Unchecked
     End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+        Dim choose As String
+        choose = ListBox1.SelectedItem
+        If choose <> "區域別 租賃站點查詢" Then
+            Process.Start("https://www.google.com.tw/maps/place/" + choose)
+        End If
+    End Sub
+
+    Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ListBox1.Items.Clear()
+        ListBox1.Items.Add("區域別 租賃站點查詢")
+    End Sub
 End Class
