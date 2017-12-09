@@ -26,4 +26,8 @@
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
         MessageBox.Show("開發人員名單:" + vbCrLf + "404416157  嚴嘉浩" + vbCrLf + "404411265  薛仲皓", "關於我們", MessageBoxButtons.OK, MessageBoxIcon.Question)
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
